@@ -28,8 +28,6 @@ _**Musicphile** is a music sharing library. Share what you find with the world, 
 
 ## MVP
 
-> .
-
 _The **Musicphile** library is a full-stack web application. For the front end, I will be using REACT to render 8 components that will communicate with the back end and trigger CRUD actions. I will also style CSS for responsive design. As for the back end, I will create a RESTful json API by building a Ruby on Rails server fetching data from a SQL database. All will be deployed via Heroku and Netlify_
 
 <br>
@@ -45,15 +43,12 @@ _The **Musicphile** library is a full-stack web application. For the front end, 
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Will Render compoments_ |
+|   React Router   | _Navigation flow for the user_ |
+|      Axios       | _CRUD_ |
 
 <br>
 
@@ -61,31 +56,9 @@ _The **Musicphile** library is a full-stack web application. For the front end, 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+<img width="1228" alt="Screen Shot 2021-10-04 at 9 42 55 AM" src="https://user-images.githubusercontent.com/58942356/135862312-869b55dd-b108-4294-9fa7-d6cd2bc00d81.png">
 
-![Dummy Link](url)
 
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
@@ -100,11 +73,12 @@ _The **Musicphile** library is a full-stack web application. For the front end, 
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
+|__ screens/
+      |__ home
+      |__ browse
+      |__ details
+      |__ create
+      |__ edit
 |__ components/
       |__ Header.jsx
 |__ services/
