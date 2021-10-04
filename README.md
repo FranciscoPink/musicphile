@@ -56,17 +56,15 @@ _The **Musicphile** library is a full-stack web application. For the front end, 
 
 #### Wireframes
 
-<img width="1228" alt="Screen Shot 2021-10-04 at 9 42 55 AM" src="https://user-images.githubusercontent.com/58942356/135862312-869b55dd-b108-4294-9fa7-d6cd2bc00d81.png">
+<img width="1522" alt="Screen Shot 2021-10-04 at 11 03 35 AM" src="https://user-images.githubusercontent.com/58942356/135875671-03ddf9c4-e448-4365-b384-e7c399e4fd84.png">
+
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
+<img width="992" alt="Screen Shot 2021-10-04 at 10 58 36 AM" src="https://user-images.githubusercontent.com/58942356/135874808-613bd702-9166-46fa-b8e5-43cd88d8f7ce.png">
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
 #### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -77,10 +75,10 @@ src
       |__ details.jsx
       |__ create.jsx
       |__ edit.jsx
+      |__ Contact.jsx
 |__ components/
       |__ nav.jsx
       |__ container.jsx
-      |__ layout.jsx
 |__ services/
 
 ```
@@ -91,9 +89,11 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Responsive design  |    M     |     5 hrs      |     TBD     |    TBD    |
+| Build components |    H     |     7 hrs      |     TBD     |     TBD     |
+| Build screens |    H     |     7 hrs      |     TBD     |     TBD     |
+| Create CRUD Actions |    H     |     7 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     26 hrs      |     TBD     |     TBD     |
 
 <br>
 
