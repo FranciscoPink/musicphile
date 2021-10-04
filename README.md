@@ -46,7 +46,7 @@ _The **Musicphile** library is a full-stack web application. For the front end, 
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Will Render compoments_ |
+|      React       | _Will render components_ |
 |   React Router   | _Navigation flow for the user_ |
 |      Axios       | _CRUD_ |
 
