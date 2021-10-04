@@ -37,7 +37,7 @@ _The **Musicphile** library is a full-stack web application. For the front end, 
 - _Create SQL Database with 3 tables,_
 - _Build Ruby on Rails server._
 - _Create react App with 8 components._
-- _Implement Responsive design._
+- _Implement Responsive design with FlexBox._
 
 <br>
 
