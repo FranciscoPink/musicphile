@@ -110,9 +110,9 @@ src
 
 ## Post-MVP
 
-> Add create account functionality for users and create a user table.
-> Ratings and comments
-> Improve styling
+- Add create account functionality for users and create a user table.
+- Ratings and comments
+- Improve styling
 
 ***
 
