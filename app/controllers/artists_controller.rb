@@ -6,7 +6,7 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    render json: @artist
+    render json: @artist, include: :songs
   end
 
   def create

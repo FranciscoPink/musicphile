@@ -9,10 +9,14 @@ Artist.destroy_all
 Genre.destroy_all
 Song.destroy_all
 
-Artist.create! name: 'Randomer'
-Artist.create! name: 'Aurora Halal'
+@randomer = Artist.create!(name: 'Randomer')
+@aurora = Artist.create!(name: 'Aurora Halal')
 
-Genre.create! name:'House'
-Genre.create! name:'Techno'
+@house = Genre.create!(name:'House')
+@techno = Genre.create!(name:'Techno')
 
-puts "#{Artist.count} artists created!"
+Song.create!(name:"untz", genre: @house, artist:@randomer)
+Song.create!(name:"Fium", genre: @techno, artist: @aurora)
+Song.create!(name:"Badum", genre: @techno, artist: @aurora)
+
+puts "Created"
