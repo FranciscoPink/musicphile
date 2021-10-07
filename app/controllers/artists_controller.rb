@@ -19,7 +19,7 @@ class ArtistsController < ApplicationController
   end
 
   def update
-    if @artist.update song_params
+    if @artist.update artist_params
       render json: @artist
     else
       render json: @artist.errors
@@ -33,10 +33,10 @@ class ArtistsController < ApplicationController
   private
 
   def set_artist
-    @artist = artist.find params[:id]
+    @artist = Artist.find params[:id]
   end
 
-  def song_params
-    params.require(:song).permit(:name)
+  def artist_params
+    params.require(:artist).permit(:name)
   end
 end
