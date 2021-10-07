@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Artist.destroy_all
+Genre.destroy_all
+Song.destroy_all
+
+Artist.create! name: 'Randomer'
+Artist.create! name: 'Aurora Halal'
+
+Genre.create! name:'House'
+Genre.create! name:'Techno'
+
+puts "#{Artist.count} artists created!"
