@@ -1,14 +1,14 @@
 class SongsController < ApplicationController
   before_action :set_genre, only: %i[create]
   before_action :set_artist, only: %i[create]
-  before_action :set_song, only: %i[show update destroy create]
+  before_action :set_song, only: %i[show update destroy]
   def index
     @songs = Song.all
     render json: @songs, include: [:artist, :genre]
   end
 
   def show
-    render json: @song
+    render json: @song, include: [:artist, :genre]
   end
 
   def create
@@ -16,7 +16,7 @@ class SongsController < ApplicationController
     @song.genre = @genre
     @song.artist = @artist
     if @song.save
-      render json: @song
+      render json: @song, include: [:artist, :genre]
     else
       render json: @song.errors, status: :unprocessable_entity
     end
@@ -24,7 +24,7 @@ class SongsController < ApplicationController
 
   def update
     if @song.update song_params
-      render json: @song
+      render json: @song, include: [:artist, :genre]
     else
       render json: @song.errors
     end

@@ -9,13 +9,14 @@ function SongDetail(props) {
   const { removeSong } = props;
 
   useEffect(() => {
+    const fetchSong = async () => {
+      const song = await getSong(id);
+      setSong(song);
+    }
     fetchSong();
-  }, [])
+  }, [id])
 
-  const fetchSong = async () => {
-    const song = await getSong(id);
-    setSong(song);
-  }
+
 
   return (
     <div>

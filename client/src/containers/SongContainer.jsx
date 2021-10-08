@@ -42,17 +42,17 @@ export default function SongsContainer() {
   return (
     <Layout>
       <Switch>
-        <Route path="/songs">
-          <Songs songs={songs} />
+        <Route path="/songs/:id/edit">
+          <Edit editSong={editSong} songs={songs} />
         </Route>
         <Route path="/songs/new">
           <Create addSong={addSong} />
         </Route>
-        <Route path="/songs/:id/edit">
-          <Edit editSong={editSong} songs={songs} />
-        </Route>
         <Route path="/songs/:id">
           <Detail removeSong={removeSong} />
+        </Route>
+        <Route path="/songs">
+          <Songs songs={songs} />
         </Route>
       </Switch>
     </Layout>
