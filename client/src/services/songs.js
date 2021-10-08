@@ -1,3 +1,5 @@
+import api from './api-config'
+
 export const getSongs = async () => {
   const res = await api.get("/songs");
   return res.data;

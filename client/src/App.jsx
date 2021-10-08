@@ -1,26 +1,18 @@
 import './App.css';
-import { Route, Swtich } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './screens/Home';
-import Nav from './components/Nav'
-import Contact from "./screens/Contact"
-// import Container from './containers/Container';
+import SongContainer from './containers/SongContainer';
 
 function App() {
   return (
-    <switch>
-      <div>
-        <div>
-          <Nav />
-        </div>
-        <div >
-          <Home />
-        </div>
-        <div>
-          <Route path="/contact" ><Contact /></Route>
-          {/* <Route path="/" ></Route> */}
-        </div>
-      </div>
-    </switch>
+    <Switch>
+      <Route path="/songs">
+        <SongContainer />
+      </Route>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+    </Switch>
   );
 }
 
