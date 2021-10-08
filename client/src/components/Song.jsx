@@ -6,8 +6,8 @@ export default function Song(props) {
   return (
     <div className="song">
       <Link to={`/songs/${song.id}`}>{song.name}</Link>
-      <p>{song.artist_id}</p>
-      <p>{song.genre_id}</p>
+      <p>{song.artist.name}</p>
+      <p>{song.genre.name}</p>
     </div>
   )
 }
