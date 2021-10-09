@@ -6,7 +6,7 @@ function Songs(props) {
   const { songs } = props
   return (
     <>
-      <h1>Shared Music</h1>
+      <h1 className='shareTitle'>Shared Music</h1>
       <Link to="/songs/new">Add to the Playlist</Link>
       <div className="songslist">
         {songs.map(song => <Song song={song} key={song.id} />)}
