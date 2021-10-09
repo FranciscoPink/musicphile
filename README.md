@@ -89,11 +89,11 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Responsive design  |    M     |     5 hrs      |     TBD     |    TBD    |
-| Build components |    H     |     7 hrs      |     TBD     |     TBD     |
-| Build screens |    H     |     7 hrs      |     TBD     |     TBD     |
-| Create CRUD Actions |    H     |     7 hrs      |     TBD     |     TBD     |
-| TOTAL               |          |     26 hrs      |     TBD     |     TBD     |
+| Responsive design  |    M     |     5 hrs      |     3 hrs    |    3 hrs   |
+| Build components |    H     |     7 hrs      |     15 hrs    |     15 hrs    |
+| Build screens |    H     |     7 hrs      |     10 hrs    |     10 hrs    |
+| Create CRUD Actions |    H     |     7 hrs      |     12 hrs    |     12 hrs    |
+| TOTAL               |          |     26 hrs      |     40 hrs     |     40 hrs     |
 
 <br>
 
@@ -116,9 +116,18 @@ src
 ***
 
 ## Code Showcase
-
-> brief code snippet of functionality that I am proud of and a brief description.
-
+```
+  def create
+    @song = Song.new song_params 
+    @song.genre = @genre
+    @song.artist = @artist
+    if @song.save
+      render json: @song, include: [:artist, :genre]
+    else
+      render json: @song.errors, status: :unprocessable_entity
+    end
+  end
+```
 ## Code Issues & Resolutions
 
-> list of all major issues encountered and their resolution.
+> Getting CRUD to work. Turns out I had the black end missing the include part of the snippett above for the create request.
