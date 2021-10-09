@@ -1,6 +1,6 @@
 # Musicphile
 
-> Live link goes here
+> https://musicphile-app.netlify.app
 
 - [Overview](#overview)
 - [MVP](#mvp)
