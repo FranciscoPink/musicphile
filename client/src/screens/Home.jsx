@@ -1,4 +1,4 @@
-import './home.css'
+import './styling.css'
 import Layout from "../components/Layout";
 
 function Home() {

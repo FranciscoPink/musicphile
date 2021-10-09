@@ -5,7 +5,6 @@ export default function Nav() {
     <div>
       <nav className="nav">
         <Link className="link" to="/">Home</Link>
-        <Link className="link" to="/create">Share A Find</Link>
         <Link className="link" to="/songs">songs</Link>
         <Link className="link" to="/contact">Contact</Link>
       </nav>

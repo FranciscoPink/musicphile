@@ -1,0 +1,25 @@
+/* Applies to all */
+body {
+  background-color: lightgrey;
+}
+/* Contact.jsx */
+.contactimg {
+  max-width: 100px;
+}
+/* Songs.jsx */
+.songslist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+/* Home.css */
+.musicphileDescription {
+  font-size: 20px;
+  size: 310px;
+ }
+
+ @media screen and (max-width: 480px) {
+
+}
