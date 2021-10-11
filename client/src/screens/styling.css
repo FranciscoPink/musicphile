@@ -17,11 +17,21 @@ body {
 /* Home.css */
 .musicphileDescription {
   font-size: 20px;
-  size: 310px;
+  width: 500px;
  }
+.homeContainer {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
 
  @media screen and (max-width: 480px) {
 .shareTitle {
   font-size: 20px;
 }
+.musicphileDescription {
+
+  font-size: 15px;
+  width: 200px;
+ }
 }
